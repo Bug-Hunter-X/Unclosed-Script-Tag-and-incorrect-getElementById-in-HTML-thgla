@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to select element by ID, missing '#' symbol
+    var div = document.getElementById("myDiv");
+    div.innerHTML = "Text added to div";
+    //Unclosed script tag leads to error
+  </script>
+</body>
+</html>
